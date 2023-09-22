@@ -17,7 +17,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 //    auto configuration.)
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("com.trendyol.bootcamp.spring.ch05.aspect")
+@ComponentScan("com.trendyol.bootcamp.spring.ch05")
 public class AspectsConfig {
 
 	@Bean

@@ -38,6 +38,8 @@ public class LoggingAspect {
 	}
 
 
+
+
 	// TODO-03: Write Pointcut Expression
 	// - Decide which advice type is most appropriate
 	// - Write a pointcut expression that selects only find* methods on
@@ -63,13 +65,12 @@ public class LoggingAspect {
 		try {
 			// Invoke repository method ...
 
-			Object returnValue = repositoryMethod.proceed();
+			return repositoryMethod.proceed();
 			
 			//  TODO-08: Add the logic to proceed with the target method invocation.
 			//  - Be sure to return the target method's return value to the caller
 			//    and delete the line below.
 
-			return returnValue;
 
 		} finally {
 			monitor.stop();
